@@ -46,7 +46,6 @@ Bulk downloading the filtered things
 
 import os # Operation System file saving-related works
 import time # managing elapsed/remaining times
-import hashlib
 from tqdm import tqdm # Downloading progress bar for the accurate assessment of the situation
 
 """
