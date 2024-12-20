@@ -1,6 +1,6 @@
 # FIRE-AE-EOtools
 
-
+This repository contains scripts for satellite remote sensing data retrieval and processing. Each script has specific functionality. After new scripts added, they will have specific .md readmes, currently this is only for Sentinel-2 Data Retrieval automatically through OData services
 
 # Sentinel-2 Data Retrieval Module
 
@@ -15,7 +15,7 @@ This module provides an automated approach to retrieving Sentinel-2 data from th
 
 ## Prerequisites
 - Python 3.x
-- Modules: `requests`, `pandas`, `os`, `time`, `hashlib`, `tqdm`, `shutil`
+- Modules: `requests`, `pandas`, `os`, `time`, `tqdm`, `shutil`
 
 Install the required Python packages using:
 ```bash
@@ -77,6 +77,8 @@ for idx, row in dfroi.iterrows():
     output_path = os.path.join(output_dir, f"product_{product_id}.zip")
     success = download_file_with_progress(download_link, output_path, session)
 ```
+## Acknowledgements
+- The data provided by Copernicus Open Access Hub OData
 
 ## License
 This module is open-source and available under the MIT License. Contributions are welcome!
